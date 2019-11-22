@@ -1,0 +1,17 @@
+﻿@model List<ISMT.Models.StudentModel>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+    </tr>
+
+@foreach ( var val in Model)
+{
+    <tr>
+        <td>@val.StudentName <br /></td>
+        <td>@val.StudentAddress <br /></td>
+    </tr>
+}
+</table>

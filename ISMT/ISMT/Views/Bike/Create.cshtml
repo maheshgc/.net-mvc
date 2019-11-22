@@ -1,0 +1,11 @@
+﻿@model  ISMT.Models.BikeModel
+
+    <form method="post" asp-action="Create">
+        <label asp-for="BikeName"></label>
+        <input asp-for="BikeName" />
+        <span asp-validation-for="BikeName" class="text-danger"></span>
+        <br />
+        <br />
+
+        <input type="submit" value="submit" />
+    </form>

@@ -1,0 +1,21 @@
+﻿@model ISMT.Models.StudentModel
+
+<h3>Student Form</h3>
+<hr />
+<form method="post" asp-action="Create">
+
+    <label asp-for="StudentName"></label>
+    <input asp-for="StudentName" />
+    <span asp-validation-for="StudentName" class="text-danger"></span>
+    <br />
+    <br />
+
+    <label asp-for="StudentAddress"></label>
+    <input asp-for="StudentAddress" />
+    <span asp-validation-for="StudentAddress" class="text-danger"></span>
+    <br />
+    <br />
+
+    <input type="submit" value="Submit" />
+
+</form>

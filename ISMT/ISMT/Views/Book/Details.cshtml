@@ -1,0 +1,21 @@
+﻿@*@model ISMT.Models.BookModel*@
+@model IEnumerable<ISMT.Models.BookModel>
+
+<h3>Book Details</h3>
+<hr />
+
+<table class="table table-bordered">
+    <tr>
+        <th>Book Id</th>
+        <th>Book Name</th>
+        <th>Book Author</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.BookId</th>
+            <th>@item.BookName</th>
+            <th>@item.BookAuthor</th>
+        </tr>
+    }
+    </table>

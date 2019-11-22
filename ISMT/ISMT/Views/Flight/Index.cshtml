@@ -1,0 +1,14 @@
+﻿@model List<ISMT.Models.FlightModel>
+
+<table class="table table-striped">
+    <tr>
+        <th>Flight No</th>
+        <th>Destination</th>
+    </tr>
+    @foreach(var item in Model){
+        <tr>
+            <td>@item.FlightNo</td>
+            <td>@item.Destination</td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,19 @@
+﻿@model  List<ISMT.Models.BikeModel>
+
+<h3>Bike Details</h3>
+<hr />
+<table class="table table-bordered">
+    <tr>
+        <th>Bike Id</th>
+        <th>Bike Name</th>
+        <th>Bike Model Number</th>
+    </tr>
+    @foreach (var bike in Model)
+    {
+    <tr>
+        <td>@bike.BikeId</td>
+        <td>@bike.BikeName</td>
+        <td>@bike.BikeModelNo</td>
+    </tr>
+    }
+</table>
